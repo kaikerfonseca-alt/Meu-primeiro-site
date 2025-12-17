@@ -6,11 +6,33 @@
 
   <style>
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
       background: #111;
       color: #fff;
       text-align: center;
-      padding-top: 50px;
+    }
+
+    nav {
+      background: #000;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+    }
+
+    nav a {
+      color: #00ff88;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 60px 20px;
     }
 
     h1 {
@@ -18,23 +40,55 @@
     }
 
     button {
-      padding: 10px 20px;
+      padding: 12px 25px;
       font-size: 16px;
       border: none;
-      border-radius: 5px;
+      border-radius: 6px;
       cursor: pointer;
       background: #00ff88;
+      margin-top: 20px;
+    }
+
+    footer {
+      background: #000;
+      padding: 20px;
+      font-size: 14px;
+      margin-top: 40px;
     }
   </style>
 </head>
 
 <body>
 
-  <h1>🚀 Meu primeiro site</<p>Estou a aprender HTML e GitHub Pages.</p>
-    
-  <button onclick="alert('Funcionou! 😄')">
-    Clica aqui
-  </button>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="home">
+    <h1>🚀 Meu primeiro site</h1>
+    <p>Estou a aprender HTML, CSS e GitHub Pages.</p>
+    <button onclick="alert('Funcionou! 😄')">Clica aqui</button>
+  </section>
+
+  <section id="sobre">
+    <h1>📖 Sobre mim</h1>
+    <p>
+      Sou iniciante em programação e estou a dar os primeiros passos
+      na criação de sites e projetos online.
+    </p>
+  </section>
+
+  <section id="contacto">
+    <h1>📬 Contacto</h1>
+    <p>Email: exemplo@email.com</p>
+    <p>GitHub: github.com/teu-usuario</p>
+  </section>
+
+  <footer>
+    © 2025 — Criado por mim 😎
+  </footer>
 
 </body>
 </html>

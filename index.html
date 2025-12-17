@@ -2,50 +2,100 @@
 <html lang="pt">
 <head>
   <meta charset="UTF-8">
-  <title>Sites Profissionais</title>
+  <title>Criação de Sites Profissionais</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
-      background: #111;
+      background: #0f0f0f;
       color: #fff;
       text-align: center;
-      padding: 40px;
     }
-    h1 {
+
+    nav {
+      background: #000;
+      padding: 15px;
+    }
+
+    nav a {
+      color: #00ff88;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 60px 20px;
+    }
+
+    h1, h2 {
       color: #00ff88;
     }
-    .box {
-      max-width: 600px;
-      margin: auto;
-    }
+
     .btn {
       display: inline-block;
-      margin-top: 20px;
-      padding: 15px 25px;
+      margin-top: 25px;
+      padding: 15px 30px;
       background: #00ff88;
       color: #000;
       text-decoration: none;
       border-radius: 6px;
       font-weight: bold;
     }
+
+    .card {
+      background: #1a1a1a;
+      padding: 25px;
+      margin: 20px auto;
+      max-width: 500px;
+      border-radius: 8px;
+    }
+
+    footer {
+      background: #000;
+      padding: 20px;
+      font-size: 14px;
+      color: #aaa;
+    }
   </style>
 </head>
+
 <body>
 
-  <div class="box">
-    <h1>🚀 Criação de Sites Simples e Profissionais</h1>
-    <p>Ajudo pequenos negócios a terem presença online de forma rápida e acessível.</p>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
 
-    <p>✔ Site moderno<br>
-       ✔ Funciona no telemóvel<br>
-       ✔ Pronto em poucos dias</p>
+  <section id="home">
+    <h1>🚀 Criação de Sites para Pequenos Negócios</h1>
+    <p>Sites simples, modernos e prontos para atrair clientes.</p>
+    <a class="btn" href="https://wa.me/351SEUNUMERO">Pedir orçamento</a>
+  </section>
 
-    <a class="btn" href="https://wa.me/351SEUNUMERO">Falar comigo no WhatsApp</a>
+  <section id="servicos">
+    <h2>💼 O que eu faço</h2>
 
-    <p style="margin-top:40px; font-size:14px;">
-      Criado por Kaiker • 2025
-    </p>
-  </div>
+    <div class="card">
+      <p>✔ Site profissional<br>
+         ✔ Funciona no telemóvel<br>
+         ✔ Entrega rápida<br>
+         ✔ Preço acessível</p>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>📲 Contacto</h2>
+    <p>Fala comigo diretamente no WhatsApp</p>
+    <a class="btn" href="https://wa.me/351925998031">Contactar agora</a>
+  </section>
+
+  <footer>
+    © 2025 — Criado por Kaiker
+  </footer>
 
 </body>
 </html>
